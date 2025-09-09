@@ -1,0 +1,15 @@
+langchain
+langchain-community
+langchain-groq
+chromadb
+sentence-transformers
+pypdf
+deep-translator
+langdetect
+fastapi
+uvicorn[standard]
+python-dotenv
+SpeechRecognition
+python-multipart
+pyaudio
+pyttsx3
