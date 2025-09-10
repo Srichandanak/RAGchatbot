@@ -1,5 +1,7 @@
 # /chat endpoint (RAG pipeline)
 
+
+# app/api/chat.py
 from fastapi import APIRouter
 from pydantic import BaseModel
 from app.services.rag_pipeline import qa_chain
@@ -16,3 +18,4 @@ async def chat_endpoint(req: ChatRequest):
     answer = multilingual_qa(req.query, qa_chain)
     log_query(req.query, answer)
     return {"query": req.query, "answer": answer}
+
